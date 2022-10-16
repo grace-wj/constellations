@@ -5,9 +5,7 @@ import ProgressBar from './components/ProgressBar/ProgressBar';
 import Question from './components/Question/Question';
 import Header from './components/Header/Header';
 import './App.css';
-import Firebase from './components/Firebase/Firebase';
-
-
+import { getCities } from './firebase';
 
 function App() {
   const [question, setQuestion] = useState(0);
@@ -28,10 +26,11 @@ function App() {
     <Question />,
   ]
 
+  console.log(getCities());
+
   return (
     <div className="App">
       <Stars />
-      <Firebase />
       { question !== 0 && question !== totalQuestions + 1 &&
         <Header next={goToNext} back={goBack} />
       }

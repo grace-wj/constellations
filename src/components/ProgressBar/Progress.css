@@ -5,10 +5,6 @@
     bottom: 10%;
 }
 
-.progress-bar p {
-    margin: 5px 0;
-}
-
 .progress-container {
     display: flex;
     flex-direction: row;
