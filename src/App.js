@@ -6,9 +6,12 @@ import Question from './components/Question/Question';
 import Header from './components/Header/Header';
 import './App.css';
 import { getCities } from './firebase';
+import { qTemplate, Constellations } from './components/constants';
 
 function App() {
   const [question, setQuestion] = useState(0);
+  const [answers, setAnswers] = useState([]);
+
   const totalQuestions = 3;
 
   const goToNext = () => {
@@ -19,14 +22,13 @@ function App() {
     setQuestion(question - 1);
   }
 
-  const questions = [
-    <Home next={goToNext} />,
-    <Question />,
-    <Question />,
-    <Question />,
-  ]
+  console.log(qTemplate);
 
-  console.log(getCities());
+  const getQuestion = () => {
+
+  }
+
+  // console.log(getCities());
 
   return (
     <div className="App">
