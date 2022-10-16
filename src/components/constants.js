@@ -9,10 +9,10 @@ export const qTemplate = [
     },
     {
         question: 'Which would you choose?',
-        choices: ['1,000 dollars', 'Deep connection']
+        choices: ['$1000', 'Deep connection']
     },
     {
-        question: 'Would you pass on an amazing opporunity to benefit a friend?',
+        question: 'Would you give up an amazing opporunity to benefit a friend?',
         choices: ['Yes', 'No']
     },
     {
