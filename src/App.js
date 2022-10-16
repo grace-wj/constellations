@@ -4,15 +4,20 @@ import Stars from './components/Stars/Stars';
 import ProgressBar from './components/ProgressBar/ProgressBar';
 import Question from './components/Question/Question';
 import Header from './components/Header/Header';
+import Result from './components/Result/Result';
+import { qTemplate } from './constants';
 import './App.css';
-import { getCities } from './firebase';
-import { qTemplate, Constellations } from './components/constants';
+
 
 function App() {
-  const [question, setQuestion] = useState(0);
+  const [question, setQuestion] = useState(-1);
   const [answers, setAnswers] = useState([]);
 
-  const totalQuestions = 3;
+  const addResult = (result) => {
+    answers.push(result);
+    setAnswers(answers);
+    goToNext();
+  }
 
   const goToNext = () => {
     setQuestion(question + 1);
@@ -22,25 +27,25 @@ function App() {
     setQuestion(question - 1);
   }
 
-  console.log(qTemplate);
-
   const getQuestion = () => {
-
+    if (question >= 0 && question < qTemplate.length) {
+      const q = qTemplate[question];
+      return (
+        <Question question={q.question} choices={q.choices} action={addResult} />
+      )
+    }
   }
 
-  // console.log(getCities());
+  console.log(answers);
 
   return (
     <div className="App">
       <Stars />
-      { question !== 0 && question !== totalQuestions + 1 &&
-        <Header next={goToNext} back={goBack} />
-      }
-      {questions[question]}
-      { question !== 0 &&
-        <ProgressBar progress={((question - 1) / totalQuestions) * 100 } />
-      }
-
+      { question === 0 }
+      <Header next={goToNext} back={goBack} />
+      {question < 0 && question < qTemplate.length ? <Home next={goToNext} /> : getQuestion()}
+      {question >= 0 && <ProgressBar progress={Math.min((question / (qTemplate.length)) * 100, 100)} />}
+      {question >= qTemplate.length && <Result result={{name: 'name', title: 'title', traits: 'traits'}} /> }
     </div>
   );
 }

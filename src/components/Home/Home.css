@@ -5,10 +5,13 @@
     animation: fade-in 2s linear 0.2s forwards;
 }
 
-#get-started {
+#get-started, .option {
     font-family: 'Inconsolata';
     font-weight: 200;
     font-size: 33px;
+}
+
+#get-started {
     opacity: 0;
     animation: fade-in 2s linear 1.2s forwards;
 }
