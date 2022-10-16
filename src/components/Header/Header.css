@@ -1,0 +1,20 @@
+.header {
+    position: absolute;
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    top: 10%;
+}
+
+.header h3 {
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin: 0 5%;
+}
+
+.header h3:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+.progress-bar {
+    position: absolute;
+    width: 45vw;
+    max-width: 300px;
+    bottom: 10%;
+}
+
+.progress-bar p {
+    margin: 5px 0;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: row;
+    height: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.progress-background {
+    background-color: white;
+    opacity: 0.5;
+}
+
+.progress-status {
+    background-color: white;
+}
+
+.progress-label {
+    position: relative;
+    font-family: 'Inconsolata';
+    color: white;
+    width: 100%;
+    text-align: center;
+}

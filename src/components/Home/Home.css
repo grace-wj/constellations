@@ -1,0 +1,29 @@
+#constellations {
+    font-size: 88px;
+    font-weight: 200;
+    opacity: 0;
+    animation: fade-in 2s linear 0.2s forwards;
+}
+
+#get-started {
+    font-family: 'Inconsolata';
+    font-weight: 200;
+    font-size: 33px;
+    opacity: 0;
+    animation: fade-in 2s linear 1.2s forwards;
+}
+
+#get-started:hover {
+    cursor: pointer;
+    opacity: 50%;
+    transition: 0.2s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
