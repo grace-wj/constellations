@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: space-around;
     height: 60vh;
-    margin-bottom: 5%;
 }
 
 .result-container h1 {
@@ -18,4 +17,14 @@
 
 .result-container p {
     font-size: 22px;
+    margin: 0;
+}
+.retake-button {
+    margin: 70px 0 0 0;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.retake-button:hover {
+    opacity: 0.7;
 }

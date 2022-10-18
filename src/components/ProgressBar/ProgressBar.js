@@ -2,7 +2,7 @@ import './Progress.css';
 
 function ProgressBar(props) {
     const { progress } = props;
-    console.log(progress);
+    console.log("progress: ", progress);
 
     return (
         <div className='progress-bar'>

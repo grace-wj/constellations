@@ -9,7 +9,8 @@ function Result(props) {
                 <h1>{name}</h1>
                 <h2>{title}</h2>
             </div>
-            <p>traits: {traits}</p>
+            <p>{traits}</p>
+            <a href={document.location.href} className='retake-button'>Take the test again</a>
         </div>
     );
 }
