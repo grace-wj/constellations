@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/constellations/static/css/main.d1bddf6f.css",
+    "main.js": "/constellations/static/js/main.2b57faa4.js",
+    "static/js/787.282cb5a8.chunk.js": "/constellations/static/js/787.282cb5a8.chunk.js",
+    "static/media/right-arrow.svg": "/constellations/static/media/right-arrow.0af0c272dda5422c05f58f5a83f1488f.svg",
+    "static/media/left-arrow.svg": "/constellations/static/media/left-arrow.a93a3b8230608e82f5212647ab59c2ef.svg",
+    "index.html": "/constellations/index.html",
+    "main.d1bddf6f.css.map": "/constellations/static/css/main.d1bddf6f.css.map",
+    "main.2b57faa4.js.map": "/constellations/static/js/main.2b57faa4.js.map",
+    "787.282cb5a8.chunk.js.map": "/constellations/static/js/787.282cb5a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1bddf6f.css",
+    "static/js/main.2b57faa4.js"
+  ]
+}
